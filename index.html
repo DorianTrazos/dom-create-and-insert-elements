@@ -7,6 +7,33 @@
     <title>Document</title>
   </head>
   <body>
+    <h2>MODO SIMPLE</h2>
+    <div>
+      <input type="text" id="name-input" placeholder="Enter your name" />
+      <button id="greet-btn">Say hello</button>
+      <div id="container"></div>
+    </div>
+
+    <div>
+      <div>
+        <label id="range-label">1</label>
+        <input type="range" id="range" min="1" max="6" step="1" value="1" />
+        <button id="generate-btn">Generate Heading</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <h2>MODO PRO</h2>
+    <div>
+      <h3>ABBY</h3>
+      <button id="find-button">Find supplies</button>
+      <ul id="supply-history"></ul>
+    </div>
+    <div>
+      <h3>BEGO</h3>
+      <button id="danger-button">Watch out, Bego!</button>
+      <div id="traffic-zone" style="font-size: 2rem; margin-top: 1rem"></div>
+      <p id="warning-text" style="color: red; font-weight: bold"></p>
+    </div>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
