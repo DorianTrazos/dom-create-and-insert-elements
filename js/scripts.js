@@ -5,7 +5,7 @@ const container = document.getElementById('container');
 buttonGreeting.addEventListener('click', () => {
   const name = input.value.trim();
 
-  if (name !== '' || name.length >= 3) {
+  if (name !== '' && name.length >= 3) {
     const greeting = document.createElement('h2');
     greeting.textContent = `Hello, ${name}!`;
     container.appendChild(greeting);
