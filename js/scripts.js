@@ -58,7 +58,7 @@ const supplyHistory = document.getElementById('supply-history');
 findButton.addEventListener('click', () => {
   day++;
 
-  const foundSomething = Math.random() > 0.9;
+  const foundSomething = Math.random() > 0.6;
 
   const li = document.createElement('li');
 
