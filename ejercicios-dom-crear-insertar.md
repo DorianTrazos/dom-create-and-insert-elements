@@ -1,15 +1,14 @@
 # Modo Fácil
 
 1️⃣Crea un input donde el usuario pueda escribir su nombre y un botón con el texto "Say hello".
-Al pulsar el botón, se debe crear e insertar un elemento h2 con el texto "Hello, [nombre]" dentro del div con id "contenedor".
+Al pulsar el botón, se debe crear e insertar un elemento h2 con el texto "Hello, [nombre]".
 
 💡 Detalles técnicos que deben aplicar:
 El h2 debe generarse dinámicamente con createElement.
-Debe usarse getElementById para seleccionar elementos.
-El texto debe construirse a partir del valor del input.
+El texto debe construirse a partir del valor del input, si está vacío o tiene menos de 3 letras no se insertará nada.
 
 2️⃣Imagina que tienes un control deslizante que te permite elegir el nivel de poder de un encabezado del 1 al 6.
-Cuanto más alto el número… más pequeño el encabezado (¡como si se estuviera alejando!).
+Cuanto más alto el número… más pequeño el encabezado.
 Cuando hagas clic en el botón, se generará un encabezado con la etiqueta correspondiente (h1...h6) y el texto "I am an hX", donde X es el número elegido.
 
 Ejemplo: si eliges 2, se insertará un <h2> con el texto "I am an h2".
@@ -66,6 +65,6 @@ Se guarda un histórico de los últimos 3 coches.
 
 Si los 3 últimos coches son iguales, se muestra un <p> en el DOM con el texto:
 
-"Bego, please be careful! That car model is stalking you! 🚨"
+"Bego, please be careful! This car model 🚗 is stalking you! 🚨" (La imagen del coche será el que se repite 3 veces)
 
 const cars = ['🚗', '🚕', '🚙'];
